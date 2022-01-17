@@ -1,0 +1,549 @@
+/*Variáveis*/
+:root{
+    --corTitulos: orangered;
+    --hoverColor: rgb(30, 255, 169);
+    --corBorda: rgb(187, 187, 187);
+    --backgroundBody: rgb(245, 245, 245);
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*PARTE SUPERIOR DO SITE*/
+body{
+    font-family: 'Bitter', serif;
+    background-color: var(--backgroundBody);
+}
+
+#screen{
+    position: relative;
+    margin: 0;
+}
+#screen #fotoP{
+    width: 100%;
+    height: 650px;
+}
+
+#nomeSup{
+    position: absolute;
+    color: orangered;
+    font-size: 3rem;
+    text-align: center;
+    top: 1rem;
+    left: 2rem;
+}
+
+#burguerSup{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    top: 4rem;
+    left: 5.4rem;
+}
+
+#ctt-sup{
+    position: absolute;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    top: 2rem;
+    right: 4rem;
+}
+
+#ctt-sup:hover{
+    color: var(--corTitulos);
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+/*modificações gerais*/
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Corpo*/
+
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cardapio #card{
+    text-align: center;
+    color: var(--corTitulos);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.nomes{
+    display: inline-block;
+    margin-top: -16rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 210px;
+    border: 7px solid;
+    border-radius: 100%;
+    border-color: var(--corBorda);
+    margin: 3rem 0 3rem 0;
+}
+
+.lanches{
+    margin-left: 11rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc{
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem 2rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.preco{
+    font-size: 1.7rem;
+    color: var(--corTitulos);
+    margin: -1rem 0 3rem 2rem;
+    padding: 0 0 1rem 1rem;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: orangered;
+    width: 100%;
+    margin-top: 3rem;
+    position: relative;
+    border: orangered 5px solid;
+}
+
+.ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 0;
+}
+
+#container-ctt{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#container-marca{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 1rem 2rem;
+}
+
+#nomeInf{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 3rem;
+    padding-left: 1.5rem;
+}
+
+#burguerInf{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    margin-top: -0.7rem;
+}
+
+#logozap{
+    display: inline-block;
+    width: 50px;
+    margin-right: 0.6rem;
+}
+
+#numero{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    transition: 0.3s;
+}
+
+#numero:hover{
+    color: var(--hoverColor);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+    /*FOTO PRINCIPAL*/
+    #screen #fotoP{
+        width: 100%;
+        height: 400px;
+    }
+    
+    /*Cardápio*/
+    #nomeSup{
+        position: absolute;
+        font-size: 2.5rem;
+        text-align: center;
+        top: 1rem;
+        left: 2rem;
+    }
+    
+    #burguerSup{
+        position: absolute;
+        font-size: 1.3rem;
+        text-align: center;
+        top: 3.5rem;
+        left: 4.6rem;
+    }
+    
+    #apresentacao{
+        position: absolute;
+        text-align: center;
+        font-size: 1rem;
+        top: 45%;
+        left: 25%;
+    }
+    
+    /*Cardápio*/
+
+    .cardapio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos{
+        width: 290px;
+        height: 290px;
+        border-color: var(--corBorda);
+        margin: 3rem 0 1rem 0;
+    }
+
+    .nomes{
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        margin-left: -2rem;
+    }
+    
+    .lanches{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .desc{
+        font-size: 1.7rem;
+        margin: 1.5rem 0 2rem 2.2rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+    
+    .preco{
+        font-size: 2.2rem;
+        color: var(--corTitulos);
+        margin: -1rem 0 3rem 0.3rem;
+        padding: 1rem 0 0rem 0rem;
+    }
+
+    /*FOOTER*/
+
+    #container-ctt{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    #container-marca{
+        padding: 0;
+    }
+
+    #nomeInf{
+        font-size: 2.5rem;
+    }
+    
+    #burguerInf{
+        font-size: 1.5rem;
+        margin-top: -0.5rem;
+        margin-left: -1.2rem;
+    }
+
+    #logozap{
+        width: 40px;
+        margin-right: 0.6rem;
+    }
+    
+    #numero{
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
+        transition: 0.3s;
+    }
+}
+
+/*TELA PEQUENA*/
+@media(max-width: 480px){
+    #screen #fotoP{
+        width: 100%;
+        height: 400px;
+    }
+
+    #nomeSup{
+        position: absolute;
+        font-size: 2rem;
+        text-align: center;
+        top: 1rem;
+        left: 1.5rem;
+    }
+
+    #burguerSup{
+        position: absolute;
+        font-size: 1rem;
+        text-align: center;
+        top: 3rem;
+        left: 3.7rem;
+    }
+
+    #ctt-sup{
+        font-size: 1.3rem;
+        top: 1.5rem;
+        right: 3rem;
+    }
+
+    /*Cardápio*/
+
+    .cardapio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos{
+        width: 240px;
+        height: 240px;
+        border-color: var(--corBorda);
+        margin: 3rem 0 1rem 0;
+    }
+
+    .nomes{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    .lanches{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .desc{
+        font-size: 1.3rem;
+        margin: 0.7rem 0 1rem 3rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+
+    .preco{
+        font-size: 2rem;
+        color: var(--corTitulos);
+        margin: -1rem 0 3rem 0.5rem;
+        padding: 1rem 0 0rem 0rem;
+    }
+
+    /*FOOTER*/
+    .ft{
+        width: 100%;
+        padding: 0;
+    }
+
+    #container-ctt{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #container-marca{
+        padding: 0.5rem, 0 0.5rem 0;
+    }
+
+    #nomeInf{
+        font-size: 2rem;
+    }
+
+    #burguerInf{
+        font-size: 1rem;
+        margin-top: -0.5rem;
+        margin-left: -1.2rem;
+    }
+
+    #logozap{
+        width: 30px;
+        margin-right: 0.6rem;
+    }
+
+    #numero{
+        font-size: 1rem;
+        margin-right: 1rem;
+        transition: 0.3s;
+    }
+}
+
+/*TELA MT PEQUENA*/
+@media(max-width: 366px){
+    /*FOTO PRINCIPAL*/
+    #screen #fotoP{
+        width: 100%;
+        height: 320px;
+    }
+
+    #nomeSup{
+        position: absolute;
+        font-size: 1.7rem;
+        text-align: center;
+        top: 0.7rem;
+        left: 1.5rem;
+    }
+    
+    #burguerSup{
+        position: absolute;
+        font-size: 0.8rem;
+        text-align: center;
+        top: 2.4rem;
+        left: 3.6rem;
+    }
+    
+    #ctt-sup{
+        font-size: 1.1rem;
+        top: 1.1rem;
+        right: 2rem;
+    }
+    
+    /*Cardápio*/
+
+    .cardapio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos{
+        width: 240px;
+        height: 240px;
+        border-color: var(--corBorda);
+        margin: 3rem 0 1rem 0;
+    }
+
+    .nomes{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+    
+    .lanches{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .desc{
+        font-size: 1.3rem;
+        margin: 0.7rem 0 1rem 3rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+    
+    .preco{
+        font-size: 2rem;
+        color: var(--corTitulos);
+        margin: -1rem 0 3rem 0.5rem;
+        padding: 1rem 0 0rem 0rem;
+    }
+
+    /*FOOTER*/
+
+    #container-ctt{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    #container-marca{
+        padding: 0;
+    }
+
+    #nomeInf{
+        font-size: 2rem;
+    }
+    
+    #burguerInf{
+        font-size: 1rem;
+        margin-top: -0.5rem;
+        margin-left: -1.2rem;
+    }
+
+    #logozap{
+        width: 30px;
+        margin-right: 0.6rem;
+    }
+    
+    #numero{
+        font-size: 1rem;
+        margin-right: 1.5rem;
+        transition: 0.3s;
+    }
+}
+
+/*TELA DO POCKET*/
+@media(max-width: 320px){
+     /*FOOTER*/
+
+     #container-ctt{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    #container-marca{
+        padding: 0;
+    }
+
+    #nomeInf{
+        font-size: 1.5rem;
+    }
+    
+    #burguerInf{
+        font-size: 0.9rem;
+        margin-top: -0.4rem;
+        margin-left: -2.3rem;
+    }
+
+    #logozap{
+        width: 25px;
+        margin-right: 0.4rem;
+    }
+    
+    #numero{
+        font-size: 0.9rem;
+        margin-right: 1.5rem;
+        transition: 0.3s;
+    }
+}
