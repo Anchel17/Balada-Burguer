@@ -2,7 +2,7 @@
 :root{
     --corTitulos: orangered;
     --hoverColor: rgb(30, 255, 169);
-    --corBorda: rgb(187, 187, 187);
+    --corBorda: rgb(201, 200, 200);
     --backgroundBody: rgb(245, 245, 245);
 }
 
@@ -104,6 +104,7 @@ a{
     border-radius: 100%;
     border-color: var(--corBorda);
     margin: 3rem 0 3rem 0;
+    background-color: var(--corTitulos);
 }
 
 .lanches{
